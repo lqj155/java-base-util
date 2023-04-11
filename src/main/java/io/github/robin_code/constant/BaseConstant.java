@@ -7,4 +7,6 @@ import lombok.NoArgsConstructor;
 public class BaseConstant {
 
     public static final String EMPTY = "";
+
+    public static final String comma = ",";
 }
