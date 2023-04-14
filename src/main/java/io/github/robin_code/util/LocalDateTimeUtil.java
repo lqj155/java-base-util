@@ -1,8 +1,8 @@
 package io.github.robin_code.util;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
 import io.github.robin_code.constant.BaseConstant;
@@ -18,5 +18,13 @@ public class LocalDateTimeUtil {
             return BaseConstant.EMPTY;
         }
         return localDateTime.format(DateTimeFormatter.ofPattern(DEFAULT_DATE_PATTERN));
+    }
+
+    /**
+     * curren datetime remove milliseconds
+     * 当前时间，舍去秒小数部分，防止四舍五入进位.
+     */
+    public static LocalDateTime currentDateTime() {
+        return LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
     }
 }
