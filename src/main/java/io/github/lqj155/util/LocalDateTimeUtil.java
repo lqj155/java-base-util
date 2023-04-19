@@ -1,11 +1,11 @@
-package io.github.robin_code.util;
+package io.github.lqj155.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
-import io.github.robin_code.constant.BaseConstant;
+import io.github.lqj155.constant.BaseConstant;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

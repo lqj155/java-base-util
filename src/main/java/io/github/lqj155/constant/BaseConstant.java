@@ -1,4 +1,4 @@
-package io.github.robin_code.constant;
+package io.github.lqj155.constant;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
